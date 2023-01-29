@@ -18,12 +18,16 @@ package com.linecorp.line.auth.fido.fido2.common.server;
 
 import java.util.List;
 
+import javax.validation.constraints.NotBlank;
+
 import com.linecorp.line.auth.fido.fido2.common.AuthenticatorTransport;
 
 import lombok.Data;
 
 @Data
 public class ServerAuthenticatorAttestationResponse extends ServerAuthenticatorResponse {
-    private String attestationObject;   // base64url encoded
+    @NotBlank
+    @Base64Encoded
+    private String attestationObject;
     private List<AuthenticatorTransport> transports;    // WebAuthn Level2
 }

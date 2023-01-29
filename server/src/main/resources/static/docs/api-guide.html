@@ -545,6 +545,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><a href="https://github.com/line/line-fido2-server" class="bare">https://github.com/line/line-fido2-server</a></p>
 </div>
 <div class="paragraph">
+<p>If you want to know the details of the WebAuthn standard, you can also refer to the official documentation.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.w3.org/TR/webauthn-2/" class="bare">https://www.w3.org/TR/webauthn-2/</a></p>
+</div>
+<div class="paragraph">
 <p>Basically, FIDO2 has the following operations - Registration, Authentication.</p>
 </div>
 <div class="paragraph">
@@ -631,7 +637,7 @@ Content-Length: 1471
     "id" : "65fUCTlqPlOSk22tkrkJ2m8I2MEhpF4fCI_pdosMAzk",
     "displayName" : "Test Display Name"
   },
-  "challenge" : "dmb5o1rULgh6shfkNb1NVes5FSUsnOU9hIhETnGcVJzysrw2TLzIQPPExrPSGTp5OWknko0fCCyASoZL0rqsig",
+  "challenge" : "TXgZfiz2B88oNbksOpC4GjNQ8YNaFzntXMBTMdN3K1XgIgKRr3FoXltAhV1zNmmdF4WJhxnoQDeq4s0bARhtRg",
   "pubKeyCredParams" : [ {
     "type" : "public-key",
     "alg" : -65535
@@ -677,7 +683,7 @@ Content-Length: 1471
     "userVerification" : "preferred"
   },
   "attestation" : "none",
-  "sessionId" : "0de6b968-ae0f-4bed-8446-ea35459fe89e",
+  "sessionId" : "8bfc693e-8582-45e1-ad08-e2b71901cc97",
   "extensions" : {
     "credProps" : true
   }
@@ -794,7 +800,7 @@ Content-Length: 624
     "internalErrorCode" : 0,
     "internalErrorCodeDescription" : null
   },
-  "challenge" : "hrImlxUL6q0-VsDZmbPS8wM5h3mirkeyGr68MMVT_1vN-cgKYjqKUb4cRK0ArZZxrpTe0erApCu2jQOSeV4Jhw",
+  "challenge" : "7ZKNccKcYL0Rky0YqVx-_-yHDudCPScBayiw17arUfzpAfqa-A8nv-OmQbSLMHtpEE0rp0MbblIzLw-bE5x6zQ",
   "timeout" : 180000,
   "rpId" : "localhost",
   "allowCredentials" : [ {
@@ -802,7 +808,7 @@ Content-Length: 624
     "id" : "AUTjvBgL29DEg4aoRVchh4KSi9cLUmNuL4JqH4H8RTvKaBVDu88CnXGHDTkpIag5ODydvM-UP5FgqzDzzM3A_tzLSeoWc7hnkQK3g0N0jifjatDHgXX6YmMVAJc"
   } ],
   "userVerification" : "preferred",
-  "sessionId" : "0929a279-17f7-4f5f-806a-5f1d6d1436c8",
+  "sessionId" : "3d310653-8d7a-449e-975e-30a467dfbe9a",
   "extensions" : { }
 }</code></pre>
 </div>
@@ -856,7 +862,7 @@ Host: localhost:8080
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code data-lang="http" class="language-http hljs">HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 269
+Content-Length: 322
 
 {
   "serverResponse" : {
@@ -865,6 +871,7 @@ Content-Length: 269
     "internalErrorCode" : 0,
     "internalErrorCodeDescription" : null
   },
+  "aaguid" : "adce0002-35bc-c60a-648b-0b25f1f05503",
   "userId" : "65fUCTlqPlOSk22tkrkJ2m8I2MEhpF4fCI_pdosMAzk",
   "userVerified" : true,
   "userPresent" : true
@@ -1234,7 +1241,7 @@ OK</code></pre>
 <div id="footer">
 <div id="footer-text">
 Version 0.1.1-SNAPSHOT<br>
-Last updated 2021-10-22 14:30:49 +0900
+Last updated 2022-08-18 10:39:04 +0900
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
